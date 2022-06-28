@@ -1,24 +1,24 @@
 :root {
-    --main-color: rgba(128, 30, 255, 1);
-    --shadow-color : rgb(178, 80, 255);
-    --transplate-color : rgba(128, 30, 255, 0.1);
-    --dark-color : rgb(70, 18, 137);
-    --light-color : rgb(248, 242, 255);
-    --font-color : rgb(12, 12, 12);
-    --base-font : "Glow Sans", "Microsoft YaHei", serif;
+    --main-color: rgb(30, 86, 255);
+    --shadow-color: rgb(80, 112, 255);
+    --transplate-color: rgba(128, 30, 255, 0.1);
+    --dark-color: rgb(26, 18, 137);
+    --light-color: rgb(242, 245, 255);
+    --font-color: rgb(12, 12, 12);
+    --base-font: "Noto Sans", "Microsoft YaHei", serif;
     --title-font: "Roboto Slab", "Times", serif;
-    --blockquote-font : "Times", "Roboto Slab", serif;
-    --blockquote-color : rgba(117, 117, 117, 0.9);
-    --monospace: "Cascadia code", "Courier New", monospace; 
+    --blockquote-font: "Times", "Roboto Slab", serif;
+    --blockquote-color: rgba(117, 117, 117, 0.9);
+    --monospace: "Cascadia code", "Courier New", monospace;
 
     /* --background : url("https://cdn.jsdelivr.net/gh/LSTM-Kirigaya/KImage/Img/2k.jpg"); */
 
-    --quote-title-font-size : 0.9em;
-    --quote-tag-font-size : 1.1em;
+    --quote-title-font-size: 0.9em;
+    --quote-tag-font-size: 1.1em;
 
     /* typora GUI config */
-    --sidebar-font-color : black;
-    --main-panel-font-color : black;
+    --sidebar-font-color: black;
+    --main-panel-font-color: black;
 }
 
 @font-face {
@@ -48,10 +48,10 @@ body {
 }
 
 html {
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
-	text-rendering: optimizelegibility;
-	-webkit-font-smoothing: initial;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: initial;
 }
 
 
@@ -61,14 +61,19 @@ html {
     /* width: 90%; */
     max-width: 1000px;
     min-height: calc(100vh - 6rem);
-	min-width: calc(100vw - 45rem);
+    min-width: calc(100vw - 45rem);
     line-height: 1.6;
     transform: none;
     height: auto;
     caret-color: var(--main-color);
 }
 
-#write h1, h2, h3, h4, h5, h6 {
+#write h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--font-color);
     font-family: var(--title-font);
     font-weight: 800;
@@ -79,7 +84,7 @@ html {
 #write h1 {
     font-size: 40px;
     margin: 0 0 1.0em 0;
-    line-height: 1.3; 
+    line-height: 1.3;
     border-bottom: solid 3px var(--main-color);
     width: fit-content;
 }
@@ -91,7 +96,7 @@ html {
 }
 
 #write h2::before {
-    content: "H2";
+    content: "◉";
     border-radius: .3em;
     font-size: .8em;
     padding: 3px 7px;
@@ -108,13 +113,13 @@ html {
 
 #write h3 {
     font-size: 24px;
-    border-radius: .3em; 
+    border-radius: .3em;
     width: fit-content;
 }
 
 #write h3::before {
-    content: "H3";
-    color : white;
+    content: "◉";
+    color: white;
     font-size: 0.8em;
     background-color: var(--main-color);
     border-radius: .3em;
@@ -138,14 +143,14 @@ html {
 
 #write hr {
     width: 60%;
-    text-align:center;
+    text-align: center;
     border-bottom: solid 1.8px var(--main-color);
     margin: 4.5em auto;
 }
 
 
 #write img {
-    border-radius: 1.5em !important;
+    border-radius: 0.5em !important;
     box-shadow: 0 0 10px 3px rgba(134, 136, 137, 0.8);
     transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
@@ -166,7 +171,7 @@ html {
     color: var(--blockquote-color);
     border-left: 6px solid var(--main-color);
     background: var(--light-color);
-    border-radius : 0.5em;
+    border-radius: 0.5em;
     font-family: var(--blockquote-font);
     line-height: 35px;
 }
@@ -287,10 +292,10 @@ html {
 
 /* code block */
 #write pre.md-fences {
-	padding: 1rem 0.5rem 1rem;
-	display: block;
-	-webkit-overflow-scrolling: touch;
-	/* box-shadow: 0 0 6px 2px rgba(151, 151, 151, 0.9); */
+    padding: 1rem 0.5rem 1rem;
+    display: block;
+    -webkit-overflow-scrolling: touch;
+    /* box-shadow: 0 0 6px 2px rgba(151, 151, 151, 0.9); */
     /* border-top: rgb(51, 51, 51) solid 35px; */
     border-top: rgb(244, 244, 244) solid 35px;
     background-color: rgb(244, 244, 244);
@@ -298,22 +303,22 @@ html {
 
 
 pre.md-fences::before {
-	content: ' ';
-	background: var(--main-color);
-	box-shadow: 23px 0 rgb(128, 128, 128), 45px 0 gray;
-	border-radius: 50%;
-	margin-top: -2.3rem;
-	position: absolute;
-	left: 15px;
-	height: 12px;
-	width: 12px;
+    content: ' ';
+    background: var(--main-color);
+    box-shadow: 23px 0 rgb(128, 128, 128), 45px 0 gray;
+    border-radius: 50%;
+    margin-top: -2.3rem;
+    position: absolute;
+    left: 15px;
+    height: 12px;
+    width: 12px;
 }
 
 #write pre.md-fences {
-	line-height: 1.5rem;
-	font-size: .9rem;
-	font-weight: 300;
-	border-radius: .7em;
+    line-height: 1.5rem;
+    font-size: .9rem;
+    font-weight: 300;
+    border-radius: .7em;
     font-family: var(--monospace) !important;
 }
 
@@ -340,7 +345,7 @@ kbd,
 samp,
 tt,
 var {
-	font-family: var(--monospace) !important;
+    font-family: var(--monospace) !important;
 }
 
 
@@ -366,30 +371,31 @@ pre.md-meta-block {
 }
 
 /* table */
-#write table
-{
+#write table {
     width: 95%;
     border-collapse: collapse;
     text-align: center;
     font-family: var(--monospace);
     margin: 20px;
 }
-#write table td, table th
-{
+
+#write table td,
+table th {
     border: 1px solid transparent;
     color: rgb(18, 18, 18);
     height: 30px;
     padding: 10px;
-    border-radius: .5em;
+    /*border-radius: .5em;*/
     transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
 }
+
 #write table td {
     font-family: var(--title-font);
 }
-#write table thead th
-{
+
+#write table thead th {
     background-color: var(--shadow-color);
     font-size: 20px;
     color: white;
@@ -399,28 +405,29 @@ pre.md-meta-block {
     vertical-align: middle;
     padding: 10px;
 }
-table tr:nth-child(odd)
-{
+
+table tr:nth-child(odd) {
     background: white;
 }
-table tr:nth-child(even)
-{
+
+table tr:nth-child(even) {
     background: var(--light-color);
 }
-table td:hover {
-  background-color: var(--shadow-color) !important;
-  color: white !important;
-  box-shadow: 0 0 10px 5px var(--shadow-color);
-  transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -webkit-transition: all 0.3s linear;
-}
+
+/* table td:hover {
+    background-color: var(--shadow-color) !important;
+    color: white !important;
+    box-shadow: 0 0 10px 5px var(--shadow-color);
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+} */
 
 
 /* main element consisting of your text */
 p {
     color: var(--font-color);
-    margin: 0 0 2em 0;  
+    margin: 0 0 2em 0;
     font-weight: 500;
     line-height: 1.6;
     font-family: var(--base-font);
@@ -440,14 +447,14 @@ a {
 
 ol,
 ul {
-  padding-left: 2em;
-  line-height: 2;
+    padding-left: 2em;
+    line-height: 2;
 }
 
 ul>li>ul>li {
     list-style-type: circle;
-  }
-  
+}
+
 ul>li>ul>li>ul>li {
     list-style-type: square;
 }
@@ -460,36 +467,36 @@ iframe {
 
 
 /* checkbox */
-.md-task-list-item:hover > input:before,
+.md-task-list-item:hover>input:before,
 input[type='checkbox']:hover:before {
-	opacity: 1;
-	transition: 0.3s;
-	background-color: var(--shadow-color);
+    opacity: 1;
+    transition: 0.3s;
+    background-color: var(--shadow-color);
 }
 
 .task-list-item input::before {
     content: "";
     display: inline-block;
-	border-radius: .3em;
+    border-radius: .3em;
     vertical-align: middle;
     border: 1.2px solid var(--main-color);
     background-color: #ffffff;
-	width: 1.1rem;
+    width: 1.1rem;
     height: 1.1rem;
-	margin-left: -0.1rem;
+    margin-left: -0.1rem;
     margin-right: 0.1rem;
-    margin-top: -0.68rem; 
+    margin-top: -0.68rem;
 }
 
 .task-list-item input:checked::before {
     padding-left: 0.125em;
     content: '✔';
-    color:white;
-	background-color: var(--main-color);
+    color: white;
+    background-color: var(--main-color);
     font-size: 0.8rem;
     line-height: 0.95rem;
     margin-top: -0.68rem;
-	transition: background-color 200ms ease-in-out;
+    transition: background-color 200ms ease-in-out;
 }
 
 
@@ -506,168 +513,168 @@ input[type='checkbox']:hover:before {
 
 /* bg color when text is selected */
 div::selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
-  
+
 div::-moz-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 div::-webkit-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 blockquote::selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 blockquote::-moz-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 blockquote::-webkit-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 p::selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 p::-moz-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 p::-webkit-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 label::selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 label::-moz-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 label::-webkit-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 span::selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 span::-moz-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 span::-webkit-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 h1::selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 h1::-moz-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 h1::-webkit-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 h2::selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 h2::-moz-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 h2::-webkit-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 h3::selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 h3::-moz-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 h3::-webkit-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 h4::selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 h4::-moz-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 h4::-webkit-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 h5::selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 h5::-moz-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 h5::-webkit-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 code::selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 code::-moz-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 code::-webkit-selection {
-background: var(--main-color);
-color: white;
+    background: var(--main-color);
+    color: white;
 }
 
 
@@ -700,9 +707,10 @@ color: white;
 /* sidebar */
 .megamenu-menu-header {
     width: 60%;
-    text-align:center;
+    text-align: center;
     border-bottom: solid 3px var(--main-color);
 }
+
 #megamenu-menu-sidebar {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--sidebar-font-color);
@@ -711,6 +719,7 @@ color: white;
     height: 92%;
     border-radius: 0 4em 4em 0;
 }
+
 #megamenu-back-btn {
     border-radius: 1.2em;
     color: var(--main-color);
@@ -725,19 +734,19 @@ color: white;
     transition: all linear .3s;
 }
 
-#megamenu-menu-list > li {
+#megamenu-menu-list>li {
     transition: all linear .3s;
 }
 
-#megamenu-menu-list > li:hover {
+#megamenu-menu-list>li:hover {
     transition: all linear .3s;
     border-top-left-radius: 1.2em;
     border-bottom-left-radius: 1.2em;
 }
 
-#megamenu-menu-list > li:focus {
+#megamenu-menu-list>li:focus {
     transition: all linear .3s;
-    color : white;
+    color: white;
     background-color: var(--shadow-color);
     width: fit-content;
     border-top-right-radius: 1.2em;
@@ -749,6 +758,7 @@ color: white;
     color: var(--main-color);
     background-color: var(--main-color);
 }
+
 .megamenu-menu-list li a {
     transition: all linear .3s;
     width: fit-content;
@@ -763,7 +773,8 @@ color: white;
     border-top-right-radius: 2em;
 }
 
-.megamenu-menu-list li a.active, .megamenu-menu-list:not(.saved) li a:hover {
+.megamenu-menu-list li a.active,
+.megamenu-menu-list:not(.saved) li a:hover {
     color: white !important;
     background-color: var(--main-color) !important;
     border-bottom-right-radius: 2em;
@@ -787,8 +798,9 @@ color: white;
     transition: all linear .3s;
     font-family: var(--title-font);
 }
+
 #recent-file-panel-action-btn {
-    border-radius: 1.2em;  
+    border-radius: 1.2em;
 }
 
 #recent-file-panel-search-input:hover {
@@ -837,7 +849,7 @@ color: white;
     color: white;
 }
 
-.active-tab-files  #info-panel-tab-file .info-panel-tab-title {
+.active-tab-files #info-panel-tab-file .info-panel-tab-title {
     background-color: var(--main-color);
     color: white;
     padding: 5px 5px;
@@ -853,7 +865,7 @@ color: white;
     transition: all linear .3s;
 }
 
-.ty-show-search #info-panel-tab-search  .info-panel-tab-title {
+.ty-show-search #info-panel-tab-search .info-panel-tab-title {
     background-color: var(--main-color);
     color: white;
     padding: 5px 5px;
@@ -873,6 +885,7 @@ color: white;
 .info-panel-tab-border {
     display: none;
 }
+
 div#file-library-list-children {
     transition: all linear .3s;
 }
@@ -897,12 +910,15 @@ div#file-library-list-children {
 
 
 /* theme */
-.theme-preview-div.active, .theme-preview-div.active:hover {
+.theme-preview-div.active,
+.theme-preview-div.active:hover {
     border-color: var(--main-color);
 }
+
 #theme-preview-grid {
     max-width: 100% !important;
 }
+
 #open-theme-folder-btn {
     transition: all .3s;
     border-radius: 2em;
@@ -910,6 +926,7 @@ div#file-library-list-children {
     color: white !important;
     background-color: var(--main-color);
 }
+
 #open-theme-folder-btn:hover {
     transition: all .3s;
     color: white !important;
@@ -969,13 +986,13 @@ div#file-library-list-children {
     border: var(--main-color) 3px solid;
     color: var(--main-color);
     background-color: white;
-}   
+}
 
 .btn-primary:hover,
 .btn-default:hover {
     transition: all .3 linear;
     color: white;
-    background-color: var(--shadow-color);  
+    background-color: var(--shadow-color);
 }
 
 .btn-primary:focus,
@@ -995,13 +1012,14 @@ div#file-library-list-children {
     margin-top: 0;
     border-bottom: 2px solid var(--shadow-color);
     width: fit-content;
-  }
+}
 
 /* Perference */
 .nav-group-item-item:hover {
     transition: all .3s;
     border: 2px solid var(--main-color);
 }
+
 .nav-group-item.active {
     color: white;
     font-family: var(--title-font);
@@ -1009,16 +1027,20 @@ div#file-library-list-children {
     border-radius: 1.5em;
     padding: 6px 11px 6px 11px;
 }
+
 .nav-group-item {
     transition: all .3s;
     border-radius: 1.5em;
     width: fit-content;
     cursor: pointer;
 }
-.nav-group-item.active, .nav-group-item:active {
+
+.nav-group-item.active,
+.nav-group-item:active {
     background-color: var(--main-color) !important;
     color: white !important;
 }
+
 .pane-group {
     font-family: var(--title-font);
 }
@@ -1066,14 +1088,16 @@ input:not([type=range]):not([type=color]):focus {
 }
 
 /* TODO fix the bug below */
-#footer-word-count-info table, #footer-word-count-info td, #footer-word-count-info tr {
-    border: none!important;
+#footer-word-count-info table,
+#footer-word-count-info td,
+#footer-word-count-info tr {
+    border: none !important;
     background: inherit !important;
-    font-size: 13.5px!important;
-    text-align: left!important;
+    font-size: 13.5px !important;
+    text-align: left !important;
     padding: 0;
     -webkit-user-select: initial;
     user-select: initial;
-    margin: 0!important;
+    margin: 0 !important;
     line-height: 1.8;
 }
