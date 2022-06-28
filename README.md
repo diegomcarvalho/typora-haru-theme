@@ -11,7 +11,7 @@ typora-root-url: ../../
 typora-copy-images-to: ../../media/theme/haru
 ---
 
-> By D.C. - I've changed I've changed colors, headers, and table formats. Everybody likes blue. Besides, I've also changed the symbols on the headers to provide a more formal look. Everything else is based on the fantastic work made by Kirigaya.
+> By D.C. - I've changed colors, headers, and table formats. Everybody likes blue. Besides, I've also changed the symbols on the headers to provide a more formal look. Everything else is based on the fantastic work made by Kirigaya.
 
 > Designed and tested on Windows11 & Ubuntu18.04. Not fully tested, but should work for MacOS.
 
