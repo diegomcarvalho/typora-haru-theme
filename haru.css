@@ -5,7 +5,7 @@
     --dark-color: rgb(26, 18, 137);
     --light-color: rgb(242, 245, 255);
     --font-color: rgb(12, 12, 12);
-    --base-font: "Noto Sans", "Microsoft YaHei", serif;
+    --base-font: "Glow Sans", "Microsoft YaHei", serif;
     --title-font: "Roboto Slab", "Times", serif;
     --blockquote-font: "Times", "Roboto Slab", serif;
     --blockquote-color: rgba(117, 117, 117, 0.9);
@@ -19,6 +19,18 @@
     /* typora GUI config */
     --sidebar-font-color: black;
     --main-panel-font-color: black;
+
+    /* mermaid */
+    --mermaid-theme: neutral;
+    /*or base, dark, forest, neutral, night */
+    --mermaid-font-family: "Fira Sans", verdana, arial, sans-serif;
+    --mermaid-sequence-numbers: on;
+    /* or "on", see https://mermaid-js.github.io/mermaid/#/sequenceDiagram?id=sequencenumbers*/
+    --mermaid-flowchart-curve: basis
+        /* or "basis", see https://github.com/typora/typora-issues/issues/1632*/
+    ;
+    --mermaid--gantt-left-padding: 75;
+    /* see https://github.com/typora/typora-issues/issues/1665*/
 }
 
 @font-face {
@@ -43,7 +55,7 @@
 
 /* global setting */
 body {
-    font-family: "Roboto Slab", "SimHei", serif;
+    font-family: "Glow Sans", "SimHei", serif;
     /* background-color: rgb(255, 255, 255); */
 }
 
@@ -142,10 +154,10 @@ h6 {
 }
 
 #write hr {
-    width: 60%;
+    width: 100%;
     text-align: center;
     border-bottom: solid 1.8px var(--main-color);
-    margin: 4.5em auto;
+    margin: 1em auto;
 }
 
 
@@ -747,7 +759,7 @@ code::-webkit-selection {
 #megamenu-menu-list>li:focus {
     transition: all linear .3s;
     color: white;
-    background-color: var(--shadow-color);
+    background-color: var(--main-color);
     width: fit-content;
     border-top-right-radius: 1.2em;
     border-bottom-right-radius: 1.2em;
@@ -775,7 +787,7 @@ code::-webkit-selection {
 
 .megamenu-menu-list li a.active,
 .megamenu-menu-list:not(.saved) li a:hover {
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
     background-color: var(--main-color) !important;
     border-bottom-right-radius: 2em;
     border-top-right-radius: 2em;
@@ -810,7 +822,7 @@ code::-webkit-selection {
 
 #recent-file-panel-search-input:focus {
     transition: all linear .3s;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     background-color: var(--shadow-color);
 }
@@ -963,7 +975,7 @@ div#file-library-list-children {
 }
 
 .megamenu-menu-panel h2::before {
-    content: "H2";
+    content: "◉";
     border-radius: .3em;
     font-size: 25px;
     padding: 3px 7px;
@@ -1014,7 +1026,7 @@ div#file-library-list-children {
     width: fit-content;
 }
 
-/* Perference */
+/* Preference */
 .nav-group-item-item:hover {
     transition: all .3s;
     border: 2px solid var(--main-color);
