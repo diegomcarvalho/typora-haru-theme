@@ -70,14 +70,18 @@ html {
 /* write is a wrapper of writable region */
 #write {
     position: static;
-    /* width: 90%; */
-    max-width: 1000px;
+    text-align: justify !important;
+    display: block;
+    white-space: pre-line;
+    width: 90%;
+    max-width: 800px;
     min-height: calc(100vh - 6rem);
     min-width: calc(100vw - 45rem);
-    line-height: 1.6;
+    line-height: 1.4;
     transform: none;
     height: auto;
     caret-color: var(--main-color);
+    direction: ltr;
 }
 
 #write h1,
@@ -305,13 +309,11 @@ h6 {
 /* code block */
 
 #write pre.md-fences {
+    width: 95%;
     display: block;
     -webkit-overflow-scrolling: touch;
     border: rgb(100, 100, 100) solid 0.5px;
     background-color: rgb(244, 244, 244);
-}
-
-#write pre.md-fences {
     line-height: 1.5rem;
     font-size: .9rem;
     font-weight: 300;
@@ -368,7 +370,7 @@ pre.md-meta-block {
 
 /* table */
 #write table {
-    width: 95%;
+    width: 85%;
     border-collapse: collapse;
     text-align: center;
     font-family: var(--monospace);
@@ -426,6 +428,7 @@ p {
     margin: 0 0 2em 0;
     font-weight: 500;
     line-height: 1.6;
+    text-align: justify;
     font-family: var(--base-font);
 }
 
@@ -494,9 +497,6 @@ input[type='checkbox']:hover:before {
     margin-top: -0.68rem;
     transition: background-color 200ms ease-in-out;
 }
-
-
-
 
 
 #footer-word-count-label {
